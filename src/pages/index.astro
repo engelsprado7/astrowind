@@ -7,6 +7,7 @@ import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Variant } from '~/types';
 
 const metadata = {
   title: 'Segundo Sueldo',
@@ -20,7 +21,7 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
+        variant: Variant.Primary,
         text: 'Actívalo ahora',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
@@ -329,7 +330,7 @@ const metadata = {
   <CallToAction
     actions={[
       {
-        variant: 'primary',
+        variant: Variant.Primary,
         text: 'Get template',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',

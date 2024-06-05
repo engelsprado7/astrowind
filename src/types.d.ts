@@ -180,9 +180,18 @@ export interface Disclaimer {
   label?: string;
 }
 
+export enum Variant {
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Tertiary = 'tertiary',
+  Link = 'link',
+}
+
+
 // COMPONENTS
 export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'link';
+  variant?: Variant;
+  target?: string;
   text?: string;
   icon?: string;
   classes?: Record<string, string>;

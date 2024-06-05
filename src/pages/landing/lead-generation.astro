@@ -3,6 +3,7 @@ import Layout from '~/layouts/LandingLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Variant } from '~/types';
 
 const metadata = {
   title: 'Lead Generation Landing Page Demo',
@@ -17,7 +18,7 @@ const metadata = {
     title="Effective Lead Generation Landing Page: Unlock the Secrets"
     subtitle="Discover the secrets to creating a Landing Page that turns curious visitors into eager leads. (Your Hero should grab attention instantly. Use a powerful headline that speaks directly to your target audience.)"
     actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { variant: Variant.Primary, text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Learn more', href: '#' },
     ]}
     image={{
@@ -31,7 +32,7 @@ const metadata = {
     subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
     actions={[
       {
-        variant: 'primary',
+        variant: Variant.Primary,
         text: 'Download Template',
         href: 'https://github.com/onwidget/astrowind',
         icon: 'tabler:download',

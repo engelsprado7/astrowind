@@ -6,6 +6,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Variant } from '~/types';
 
 const metadata = {
   title: 'Pricing',
@@ -235,7 +236,7 @@ const metadata = {
     subtitle="Join our community of satisfied customers who have transformed their work with our templates."
     actions={[
       {
-        variant: 'primary',
+        variant: Variant.Primary,
         text: 'Get started now',
         href: '/',
       },
