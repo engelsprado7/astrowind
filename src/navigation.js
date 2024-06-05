@@ -1,5 +1,5 @@
-import { Variant } from './types';
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { Variant } from '~/enums';
 
 export const headerData = {
   links: [

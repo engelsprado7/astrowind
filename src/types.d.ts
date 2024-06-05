@@ -1,5 +1,6 @@
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 import type { HTMLAttributes, ImageMetadata } from 'astro/types';
+import { Variant } from '~/enums';
 
 export interface Post {
   /** A unique ID number that identifies a post. */
@@ -179,14 +180,6 @@ export interface Textarea {
 export interface Disclaimer {
   label?: string;
 }
-
-export enum Variant {
-  Primary = 'primary',
-  Secondary = 'secondary',
-  Tertiary = 'tertiary',
-  Link = 'link',
-}
-
 
 // COMPONENTS
 export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
