@@ -8,6 +8,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { Variant } from '~/enums';
+import Image from '~/components/common/Image.astro';
 
 const metadata = {
   title: 'Segundo Sueldo',
@@ -147,6 +148,10 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
+
+  <section class="md:py-12 py-4">
+    <Image src={'~/assets/images/banner.png'} alt={'AstroWind Hero Image'} loading={'lazy'} class="mx-auto" />
+  </section>
   <!-- Features Widget *************** -->
 
   <!-- <Features
@@ -213,9 +218,9 @@ const metadata = {
         description: 'Aprovecha al máximo el interés compuesto reinvirtiendo automáticamente tus regalías.',
       },
       {
-        title: 'No te pierdas ninguna inversión',
+        title: 'Acceso prioritario',
         description:
-          'Acceso prioritario mediante Segundo Sueldo a todas las nuevas rondas para que nunca te quedes fuera.',
+          'No te pierdas ninguna inversión, mediante Segundo Sueldo accede a todas las nuevas rondas para que nunca te quedes fuera.',
       },
     ]}
     image={{
