@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import { SITE } from 'astrowind:config';
 import { getHomePermalink } from '~/utils/permalinks';
+import Image from '../common/Image.astro';
 
 interface Link {
   text?: string;
@@ -95,7 +96,11 @@ const { socialLinks = [], secondaryLinks = [], footNote = '', theme = 'light' } 
       }
 
       <div class="text-sm mr-4 dark:text-muted">
-        <Fragment set:html={footNote} />
+        <Fragment>
+          <Image src={'~/assets/images/logo.png'} alt="onWidget logo" loading="lazy" class="rounded-sm" />
+          Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> Segundo Sueldo</a> · All
+          rights reserved.
+        </Fragment>
       </div>
     </div>
   </div>
