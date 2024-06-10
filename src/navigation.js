@@ -119,8 +119,8 @@ export const headerData = {
   ],
 
   actions: [
-    { text: 'Regístrate', href: 'https://github.com/onwidget/astrowind', target: '_blank', variant: Variant.Secondary },
-    { text: 'Inicia sesión', href: 'https://github.com/onwidget/astrowind', target: '_blank', variant: Variant.Link }],
+    { text: 'Regístrate', href: 'https://playbusiness.mx/pre-registro', target: '_blank', variant: Variant.Secondary },
+    { text: 'Inicia sesión', href: 'https://playbusiness.mx/entrar', target: '_blank', variant: Variant.Link }],
 };
 
 export const footerData = {
@@ -175,11 +175,9 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
 
