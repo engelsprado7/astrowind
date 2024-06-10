@@ -11,7 +11,7 @@ metadata:
   title:
     default: Segundo Sueldo
     template: '%s — Segundo Sueldo'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Genera riqueza de forma automatizada sin ser experto. Vive de tus inversiones."
   robots:
     index: true
     follow: true
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
