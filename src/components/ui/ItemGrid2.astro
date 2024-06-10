@@ -1,10 +1,10 @@
 ---
 import type { ItemGrid as Props } from '~/types';
-import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
 import Button from './Button.astro';
+import Image from '../common/Image.astro';
 
-const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props;
+const { items = [], columns, classes = {} } = Astro.props;
 
 const {
   container: containerClass = '',
@@ -12,7 +12,6 @@ const {
   panel: panelClass = '',
   title: titleClass = '',
   description: descriptionClass = '',
-  icon: defaultIconClass = 'text-primary',
 } = classes;
 ---
 
@@ -32,11 +31,20 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
+      {items.map(({ title, description, image, callToAction, classes: itemClasses = {} }) => (
         <div class={twMerge('relative flex flex-col', panelClass, itemClasses?.panel)}>
           <div class="flex justify-between items-center">
-            {(icon || defaultIcon) && (
+            {/* {(icon || defaultIcon) && (
               <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
+            )} */}
+            {image && (
+              <div>
+                {typeof image === 'string' ? (
+                  <Fragment set:html={image} />
+                ) : (
+                  <Image class="mb-2 w-10 h-10 rounded-full shadow-md" loading="eager" {...image} />
+                )}
+              </div>
             )}
             {callToAction && (
               <div class="mt-2">
