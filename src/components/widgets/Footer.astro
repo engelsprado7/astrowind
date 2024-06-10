@@ -11,23 +11,25 @@ interface Link {
   icon?: string;
 }
 
-// interface Links {
-//   title?: string;
-//   links: Array<Link>;
-// }
+interface Links {
+  title?: string;
+  links: Array<Link>;
+}
 
 export interface Props {
-  // links: Array<Links>;
+  links: Array<Links>;
   secondaryLinks: Array<Link>;
   socialLinks: Array<Link>;
   footNote?: string;
   theme?: string;
 }
 
-const { socialLinks = [], secondaryLinks = [], theme = 'light' } = Astro.props;
+const { socialLinks = [], secondaryLinks = [], theme = 'light', links = [] } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+<footer
+  class:list={[{ dark: theme === 'dark' }, 'pb-10 relative border-t border-gray-200 dark:border-slate-800 not-prose']}
+>
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
     <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
@@ -50,7 +52,7 @@ const { socialLinks = [], secondaryLinks = [], theme = 'light' } = Astro.props;
           }
         </div>
       </div>
-      <!-- {
+      {
         links.map(({ title, links }) => (
           <div class="col-span-6 md:col-span-3 lg:col-span-2">
             <div class="dark:text-gray-300 font-medium mb-2">{title}</div>
@@ -71,7 +73,7 @@ const { socialLinks = [], secondaryLinks = [], theme = 'light' } = Astro.props;
             )}
           </div>
         ))
-      } -->
+      }
     </div>
     <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
       {
@@ -101,6 +103,57 @@ const { socialLinks = [], secondaryLinks = [], theme = 'light' } = Astro.props;
           Made by <a class="text-blue-600 underline dark:text-muted" href="https://playbusiness.mx/"> Segundo Sueldo</a>
           · All rights reserved.
         </Fragment>
+      </div>
+    </div>
+    <div>
+      <div class="text-gray-800 text-sm *:mb-2">
+        <p>
+          Play Business S.A.P.I. de C.V., IFC ("Play Business") es una sociedad autorizada para organizarse y operar
+          como Institución de Financiamiento Colectivo por la Comisión Nacional Bancaria y de Valores, por lo que se
+          encuentra autorizada, regulada y supervisada por las Autoridades Financieras.
+        </p>
+        <p>
+          Ni el Gobierno Federal ni las entidades de la administración pública paraestatal podrán responsabilizarse o
+          garantizar los recursos de las personas físicas o morales que realicen actos de carácter financiero o de pagos
+          a través de la plataforma de Play Business, así como tampoco asumir responsabilidad alguna por las
+          obligaciones contraídas por Play Business o por alguna persona física o moral frente a otra, en virtud de las
+          operaciones que celebren.
+        </p>
+        <p>
+          <span>
+            Unidad Especializada de Atención a Usuarios (UNE)
+            <a
+              target="_blank"
+              class="underline green-color"
+              href="https://assets.playbusiness.mx/uploads/public_file/file/635/Aviso_UNE_PDF.pdf">Ver aviso UNE</a
+            >
+          </span>
+          <br />
+          Contacto del titular de la UNE: Daniela Martinez Parente y Suárez
+          <br />
+          UNE: <a href="https://playbusiness.mx/une/nuevo">https://playbusiness.mx/une/nuevo</a>
+          <br />
+          Teléfono y correo electrónico:
+          <a href="tel:55 8854 5509">55 8854 5509</a> /
+          <a href="mailto:une@playbusiness.mx">une@playbusiness.mx</a>
+          <br />
+          Horario de atención: Lunes a Jueves: 9:00 - 18:00 hrs y Viernes: 09:00 - 14:00 hrs
+        </p>
+      </div>
+
+      <div>
+        <div class="flex flex-row gap-2 items-center mt-10">
+          <div class="w-20">
+            <a class="ignore-popup" href="https://www.buro.gob.mx/general_gob.php?id_sector=58&id_periodo=33">
+              <Image src={'~/assets/images/buro.svg'} alt="buro logo" loading="eager" />
+            </a>
+          </div>
+          <div class="w-20">
+            <a href="https://playbusiness.mx/une/nuevo"
+              ><img alt="une-icon" src="https://assets.playbusiness.mx/uploads/public_file/file/565/une-small.png" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

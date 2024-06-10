@@ -126,58 +126,49 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Conoce más',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Glosario', href: 'https://assets.playbusiness.mx/uploads/public_file/file/560/792041970180067369glosario_pdf.pdf' },
+        { text: 'Consultas, aclaraciones y reclamaciones', href: 'https://playbusiness.mx/une/nuevo' },
+        { text: 'Actualizaciones y mejoras', href: 'https://play-business.notion.site/Actualizaciones-y-Mejoras-1464612da624404da711fbd1d8cbe12f' }
       ],
     },
     {
-      title: 'Platform',
+      title: 'Nosotros',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Estados Financieros PB', href: 'https://play-business.notion.site/Estados-Financieros-Play-Business-fd77c8aa40d94efaa0435efd48cbdf05' },
+        { text: 'Estadísticas Anexo 17', href: 'https://assets.playbusiness.mx/uploads/public_file/file/564/Anexo17-S2_2023(2).pdf' }
       ],
     },
     {
-      title: 'Support',
+      title: 'Otros',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Reclamar beneficiario', href: 'https://playbusiness.mx/reclamo-de-beneficiario/nuevo' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Políticas',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Términos y condiciones', href: 'https://playbusiness.mx/legal-institucionalhttps://playbusiness.mxterminos-y-condiciones' },
+        { text: 'Aviso de privacidad', href: 'https://playbusiness.mx/legal-institucional/aviso-de-privacidad' },
+        { text: 'Políticas de cookies', href: 'https://playbusiness.mx/legal-institucional/politica-de-cookies' },
+        { text: 'Servicio de continuidad', href: 'https://playbusiness.mx/legal-institucional/servicio-de-continuidad' },
+        { text: 'Contratos de adhesión', href: 'https://playbusiness.mx/legal-institucional/contratos-de-adhesion' },
+        { text: 'Consulta los costos y las comisiones de nuestros productos', href: 'https://playbusiness.mx/legal-institucional/conoce-nuestras-comisiones' },
+        { text: 'Buró de Entidades Financieras', href: 'https://playbusiness.mx/paginas/legal-institucional/buro-entidades-financieras' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    // { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/playbusinessmx' },
+    { ariaLabel: 'linkedin', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/play-business' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/playbusiness.mx' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/playbusiness' },
+    // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
 
