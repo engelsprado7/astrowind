@@ -3,64 +3,7 @@ import { GoogleAnalytics } from '@astrolib/analytics';
 import { ANALYTICS } from 'astrowind:config';
 ---
 
-<Fragment>
-  <!-- Meta Pixel Code -->
-  <script is:inline>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        // eslint-disable-next-line prefer-spread, prefer-rest-params
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1021575479363257');
-    fbq('track', 'PageView');
-  </script>
-  <noscript
-    ><img
-      height="1"
-      width="1"
-      style="display:none"
-      src="https://www.facebook.com/tr?id=1021575479363257&ev=PageView&noscript=1"
-    /></noscript
-  >
-  <!-- End Meta Pixel Code -->
-  <!-- in <head> before GTM code -->
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    function gtag() {
-      // eslint-disable-next-line prefer-rest-params
-      dataLayer.push(arguments);
-    }
-  </script>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      // eslint-disable-next-line no-var
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      /* eslint-disable */
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PPHWJR55');
-  </script>
-  <!-- End Google Tag Manager -->
-</Fragment>
+<Fragment> </Fragment>
 {
   ANALYTICS?.vendors?.googleAnalytics?.id ? (
     <GoogleAnalytics
