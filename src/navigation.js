@@ -1,4 +1,3 @@
-import { getPermalink, getAsset } from './utils/permalinks';
 import { Variant } from '~/enums';
 
 export const headerData = {

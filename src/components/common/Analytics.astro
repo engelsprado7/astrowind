@@ -5,6 +5,14 @@ import { ANALYTICS } from 'astrowind:config';
 
 <Fragment> </Fragment>
 {
+  ANALYTICS?.vendors?.googleTagManager?.id ? (
+    <GoogleAnalytics
+      id={String(ANALYTICS.vendors.googleTagManager.id)}
+      partytown={ANALYTICS?.vendors?.googleTagManager?.partytown}
+    />
+  ) : null
+}
+{
   ANALYTICS?.vendors?.googleAnalytics?.id ? (
     <GoogleAnalytics
       id={String(ANALYTICS.vendors.googleAnalytics.id)}

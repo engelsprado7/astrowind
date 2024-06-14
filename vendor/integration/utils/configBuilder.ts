@@ -185,6 +185,10 @@ const getAnalytics = (config: Config) => {
         id: 'G-WNRQ6H3V5V',
         partytown: true,
       },
+      googleTagManager: {
+        id: "GTM-PPHWJR55",
+        partytown: true,
+      }
     },
   };
 
