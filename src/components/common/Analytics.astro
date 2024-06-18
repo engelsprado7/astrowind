@@ -3,16 +3,6 @@ import { GoogleAnalytics } from '@astrolib/analytics';
 import { ANALYTICS } from 'astrowind:config';
 ---
 
-<!-- in <head> before GTM code -->
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  function gtag() {
-    // eslint-disable-next-line prefer-rest-params
-    dataLayer.push(arguments);
-  }
-</script>
-
 <!-- Google Tag Manager -->
 <script is:inline>
   (function (w, d, s, l, i) {
